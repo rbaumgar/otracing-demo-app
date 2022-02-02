@@ -1,8 +1,8 @@
 # Using OpenTracing and Jaeger with Your Own Services/Application
 
-![](images/OpenTracing.png)
+![](images/OpenTracing1.png)
 
-*By Robert Baumgartner, Red Hat Austria, Janurary 2022 (OpenShift 4.9)*
+*By Robert Baumgartner, Red Hat Austria, February 2022 (OpenShift 4.9)*
 
 In this blog I will guide you on
 
@@ -40,7 +40,7 @@ In the the following diagram I will show you how the flow will be between your a
 To make the demo simpler I am using the AllInOne  image from Jaeger. This will install collector, query and Jaeger UI in a single pod, using in-memory storage by default.
 
 More details can be found
-- [Jaeger Componenets](https://www.jaegertracing.io/docs/1.29/architecture/#components)
+- [Jaeger Components](https://www.jaegertracing.io/docs/1.29/architecture/#components)
 
 ## Enabling Distributed Tracing
 
@@ -54,7 +54,7 @@ In this demo we do not install the OpenShift Elasticsearch Operator, because we 
 
 Make sure you are logged in as cluster-admin:
 
-After a short time, you can check that the operator pods is created and running and the CRD is created:
+After a short time, you can check that the operator pod is created and running and the CRD is created:
 
 ```shell
 $ oc get pod -n openshift-operators|grep jaeger
