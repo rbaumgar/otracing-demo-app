@@ -29,9 +29,9 @@ OpenShift distributed tracing platform Operator is based on Jaeger 1.28.
 
 OpenShift distributed tracing data collection Operator based on OpenTelemetry 0.33. (Technology Preview)
 
-OpenTelemetry is not used in ths blog.
+OpenTelemetry is not used in this blog.
 
-## OpenTelemetry and Jaeger
+## OpenTracing and Jaeger
 
 In the the following diagram I will show you how the flow will be between your application and Jaeger.
 
@@ -54,7 +54,7 @@ In this demo we do not install the OpenShift Elasticsearch Operator, because we 
 
 Make sure you are logged in as cluster-admin:
 
-After a short time, you can check that the operator pods were created and running and the CRDs are created:
+After a short time, you can check that the operator pods is created and running and the CRD is created:
 
 ```shell
 $ oc get pod -n openshift-operators|grep jaeger
